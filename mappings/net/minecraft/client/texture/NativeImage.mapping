@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
-	FIELD field_21684 LOGGER Lorg/slf4j/Logger;
 	FIELD field_4986 format Lnet/minecraft/class_1011$class_1012;
 	FIELD field_4987 sizeBytes J
 	FIELD field_4988 pointer J
@@ -7,6 +6,7 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 	FIELD field_4990 isStbImage Z
 	FIELD field_4991 width I
 	FIELD field_4992 WRITE_TO_FILE_OPEN_OPTIONS Ljava/util/Set;
+	FIELD field_21684 LOGGER Lorg/slf4j/Logger;
 	METHOD <init> (IIZ)V
 		ARG 1 width
 		ARG 2 height
@@ -22,46 +22,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		ARG 3 height
 		ARG 4 useStb
 		ARG 5 pointer
-	METHOD method_22619 upload (IIIIIIIZZZZ)V
-		ARG 1 level
-		ARG 2 offsetX
-		ARG 3 offsetY
-		ARG 4 unpackSkipPixels
-		ARG 5 unpackSkipRows
-		ARG 6 width
-		ARG 7 height
-		ARG 8 blur
-		ARG 9 clamp
-		ARG 10 mipmap
-		ARG 11 close
-	METHOD method_24032 write (Ljava/nio/channels/WritableByteChannel;)Z
-		ARG 1 channel
-	METHOD method_24036 getBytes ()[B
-	METHOD method_35620 readDepthComponent (F)V
-		ARG 1 unused
-	METHOD method_35621 setLuminance (IIB)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 luminance
-	METHOD method_35623 getRed (II)B
-		ARG 1 x
-		ARG 2 y
-	METHOD method_35624 blend (III)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 color
-	METHOD method_35625 getGreen (II)B
-		ARG 1 x
-		ARG 2 y
-	METHOD method_35626 getBlue (II)B
-		ARG 1 x
-		ARG 2 y
-	METHOD method_35627 drawPixels ()V
-		COMMENT Use {@code upload} to upload this image to GL so it can be used later. This
-		COMMENT method is not used in vanilla, and its side effects are not yet known.
-	METHOD method_36559 isOutOfBounds (II)Z
-		ARG 1 x
-		ARG 2 y
 	METHOD method_4300 resizeSubRectTo (IIIILnet/minecraft/class_1011;)V
 		ARG 1 x
 		ARG 2 y
@@ -166,6 +126,46 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 	METHOD method_4327 loadFromTextureImage (IZ)V
 		ARG 1 level
 		ARG 2 removeAlpha
+	METHOD method_22619 upload (IIIIIIIZZZZ)V
+		ARG 1 level
+		ARG 2 offsetX
+		ARG 3 offsetY
+		ARG 4 unpackSkipPixels
+		ARG 5 unpackSkipRows
+		ARG 6 width
+		ARG 7 height
+		ARG 8 blur
+		ARG 9 clamp
+		ARG 10 mipmap
+		ARG 11 close
+	METHOD method_24032 write (Ljava/nio/channels/WritableByteChannel;)Z
+		ARG 1 channel
+	METHOD method_24036 getBytes ()[B
+	METHOD method_35620 readDepthComponent (F)V
+		ARG 1 unused
+	METHOD method_35621 setLuminance (IIB)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 luminance
+	METHOD method_35623 getRed (II)B
+		ARG 1 x
+		ARG 2 y
+	METHOD method_35624 blend (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 color
+	METHOD method_35625 getGreen (II)B
+		ARG 1 x
+		ARG 2 y
+	METHOD method_35626 getBlue (II)B
+		ARG 1 x
+		ARG 2 y
+	METHOD method_35627 drawPixels ()V
+		COMMENT Use {@code upload} to upload this image to GL so it can be used later. This
+		COMMENT method is not used in vanilla, and its side effects are not yet known.
+	METHOD method_36559 isOutOfBounds (II)Z
+		ARG 1 x
+		ARG 2 y
 	METHOD method_47594 copyRect (Lnet/minecraft/class_1011;IIIIIIZZ)V
 		ARG 1 image
 		ARG 2 x
@@ -220,6 +220,19 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 			ARG 13 luminanceOffset
 			ARG 14 alphaOffset
 			ARG 15 writeable
+		METHOD method_4329 hasAlpha ()Z
+		METHOD method_4330 getOpacityChannelOffset ()I
+			COMMENT @apiNote For luminance-alpha format, this would return the luminance offset
+			COMMENT than the alpha offset.
+		METHOD method_4332 getAlphaOffset ()I
+		METHOD method_4333 toGl ()I
+		METHOD method_4335 getChannelCount ()I
+		METHOD method_4336 fromChannelCount (I)Lnet/minecraft/class_1011$class_1012;
+			ARG 0 glFormat
+		METHOD method_4337 hasOpacityChannel ()Z
+		METHOD method_4338 isWriteable ()Z
+		METHOD method_4339 setPackAlignment ()V
+		METHOD method_4340 setUnpackAlignment ()V
 		METHOD method_35628 hasRed ()Z
 		METHOD method_35629 hasGreen ()Z
 		METHOD method_35630 hasBlue ()Z
@@ -234,19 +247,6 @@ CLASS net/minecraft/class_1011 net/minecraft/client/texture/NativeImage
 		METHOD method_35639 getRedChannelOffset ()I
 		METHOD method_35640 getGreenChannelOffset ()I
 		METHOD method_35641 getBlueChannelOffset ()I
-		METHOD method_4329 hasAlpha ()Z
-		METHOD method_4330 getOpacityChannelOffset ()I
-			COMMENT @apiNote For luminance-alpha format, this would return the luminance offset
-			COMMENT than the alpha offset.
-		METHOD method_4332 getAlphaOffset ()I
-		METHOD method_4333 toGl ()I
-		METHOD method_4335 getChannelCount ()I
-		METHOD method_4336 fromChannelCount (I)Lnet/minecraft/class_1011$class_1012;
-			ARG 0 glFormat
-		METHOD method_4337 hasOpacityChannel ()Z
-		METHOD method_4338 isWriteable ()Z
-		METHOD method_4339 setPackAlignment ()V
-		METHOD method_4340 setUnpackAlignment ()V
 	CLASS class_1013 InternalFormat
 		COMMENT Represents the internal formats sent to {@code glTexImage2D}, representing the
 		COMMENT number of color channels present in an image to prepare.

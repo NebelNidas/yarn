@@ -1,11 +1,4 @@
 CLASS net/minecraft/class_1493 net/minecraft/entity/passive/WolfEntity
-	FIELD field_18004 FOLLOW_TAMED_PREDICATE Ljava/util/function/Predicate;
-	FIELD field_25371 ANGER_TIME_RANGE Lnet/minecraft/class_6019;
-	FIELD field_25372 angryAt Ljava/util/UUID;
-	FIELD field_25373 ANGER_TIME Lnet/minecraft/class_2940;
-	FIELD field_30386 WILD_MAX_HEALTH F
-	FIELD field_30387 TAMED_MAX_HEALTH F
-	FIELD field_49722 VARIANT Lnet/minecraft/class_2940;
 	FIELD field_6944 furWet Z
 	FIELD field_6945 lastShakeProgress F
 	FIELD field_6946 BEGGING Lnet/minecraft/class_2940;
@@ -14,26 +7,13 @@ CLASS net/minecraft/class_1493 net/minecraft/entity/passive/WolfEntity
 	FIELD field_6950 COLLAR_COLOR Lnet/minecraft/class_2940;
 	FIELD field_6951 canShakeWaterOff Z
 	FIELD field_6952 begAnimationProgress F
-	METHOD method_18444 (Lnet/minecraft/class_1309;)Z
-		ARG 0 entity
-	METHOD method_26897 createWolfAttributes ()Lnet/minecraft/class_5132$class_5133;
-	METHOD method_31167 resetShake ()V
-	METHOD method_39450 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
-		ARG 0 type
-		ARG 1 world
-		ARG 2 spawnReason
-		ARG 3 pos
-		ARG 4 random
-	METHOD method_55710 hasArmor ()Z
-	METHOD method_57304 shouldArmorAbsorbDamage (Lnet/minecraft/class_1282;)Z
-		ARG 1 source
-	METHOD method_58059 (Lnet/minecraft/class_5321;)Ljava/util/Optional;
-		ARG 1 variantKey
-	METHOD method_58060 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_5321;
-		ARG 0 variantId
-	METHOD method_58061 getTextureId ()Lnet/minecraft/class_2960;
-	METHOD method_58169 tryTame (Lnet/minecraft/class_1657;)V
-		ARG 1 player
+	FIELD field_18004 FOLLOW_TAMED_PREDICATE Ljava/util/function/Predicate;
+	FIELD field_25371 ANGER_TIME_RANGE Lnet/minecraft/class_6019;
+	FIELD field_25372 angryAt Ljava/util/UUID;
+	FIELD field_25373 ANGER_TIME Lnet/minecraft/class_2940;
+	FIELD field_30386 WILD_MAX_HEALTH F
+	FIELD field_30387 TAMED_MAX_HEALTH F
+	FIELD field_49722 VARIANT Lnet/minecraft/class_2940;
 	METHOD method_6707 getFurWetBrightnessMultiplier (F)F
 		COMMENT Returns this wolf's brightness multiplier based on the fur wetness.
 		COMMENT <p>
@@ -58,6 +38,26 @@ CLASS net/minecraft/class_1493 net/minecraft/entity/passive/WolfEntity
 		ARG 1 tickDelta
 	METHOD method_6719 getBegAnimationProgress (F)F
 		ARG 1 tickDelta
+	METHOD method_18444 (Lnet/minecraft/class_1309;)Z
+		ARG 0 entity
+	METHOD method_26897 createWolfAttributes ()Lnet/minecraft/class_5132$class_5133;
+	METHOD method_31167 resetShake ()V
+	METHOD method_39450 canSpawn (Lnet/minecraft/class_1299;Lnet/minecraft/class_1936;Lnet/minecraft/class_3730;Lnet/minecraft/class_2338;Lnet/minecraft/class_5819;)Z
+		ARG 0 type
+		ARG 1 world
+		ARG 2 spawnReason
+		ARG 3 pos
+		ARG 4 random
+	METHOD method_55710 hasArmor ()Z
+	METHOD method_57304 shouldArmorAbsorbDamage (Lnet/minecraft/class_1282;)Z
+		ARG 1 source
+	METHOD method_58059 (Lnet/minecraft/class_5321;)Ljava/util/Optional;
+		ARG 1 variantKey
+	METHOD method_58060 (Lnet/minecraft/class_2960;)Lnet/minecraft/class_5321;
+		ARG 0 variantId
+	METHOD method_58061 getTextureId ()Lnet/minecraft/class_2960;
+	METHOD method_58169 tryTame (Lnet/minecraft/class_1657;)V
+		ARG 1 player
 	CLASS class_1494 AvoidLlamaGoal
 		FIELD field_6954 wolf Lnet/minecraft/class_1493;
 		METHOD <init> (Lnet/minecraft/class_1493;Lnet/minecraft/class_1493;Ljava/lang/Class;FDD)V

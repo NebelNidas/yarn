@@ -1,7 +1,4 @@
 CLASS net/minecraft/class_756 net/minecraft/client/render/item/BuiltinModelItemRenderer
-	FIELD field_27737 skullModels Ljava/util/Map;
-	FIELD field_27738 blockEntityRenderDispatcher Lnet/minecraft/class_824;
-	FIELD field_27739 entityModelLoader Lnet/minecraft/class_5599;
 	FIELD field_3976 renderChestNormal Lnet/minecraft/class_2595;
 	FIELD field_3977 renderChestEnder Lnet/minecraft/class_2611;
 	FIELD field_3978 renderChestTrapped Lnet/minecraft/class_2595;
@@ -12,6 +9,9 @@ CLASS net/minecraft/class_756 net/minecraft/client/render/item/BuiltinModelItemR
 	FIELD field_3983 renderBanner Lnet/minecraft/class_2573;
 	FIELD field_3984 RENDER_SHULKER_BOX Lnet/minecraft/class_2627;
 	FIELD field_3985 modelTrident Lnet/minecraft/class_613;
+	FIELD field_27737 skullModels Ljava/util/Map;
+	FIELD field_27738 blockEntityRenderDispatcher Lnet/minecraft/class_824;
+	FIELD field_27739 entityModelLoader Lnet/minecraft/class_5599;
 	FIELD field_42909 renderDecoratedPot Lnet/minecraft/class_8172;
 	METHOD <init> (Lnet/minecraft/class_824;Lnet/minecraft/class_5599;)V
 		ARG 1 blockEntityRenderDispatcher

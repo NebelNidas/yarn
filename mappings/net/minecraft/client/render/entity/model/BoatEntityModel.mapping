@@ -33,6 +33,7 @@ CLASS net/minecraft/class_554 net/minecraft/client/render/entity/model/BoatEntit
 	COMMENT </tr>
 	COMMENT </table>
 	COMMENT </div>
+	FIELD field_3326 waterPatch Lnet/minecraft/class_630;
 	FIELD field_20922 parts Lcom/google/common/collect/ImmutableList;
 	FIELD field_27396 leftPaddle Lnet/minecraft/class_630;
 	FIELD field_27397 rightPaddle Lnet/minecraft/class_630;
@@ -52,7 +53,6 @@ CLASS net/minecraft/class_554 net/minecraft/client/render/entity/model/BoatEntit
 		COMMENT The key of the right model part, whose value is {@value}.
 	FIELD field_32465 LEFT Ljava/lang/String;
 		COMMENT The key of the left model part, whose value is {@value}.
-	FIELD field_3326 waterPatch Lnet/minecraft/class_630;
 	METHOD <init> (Lnet/minecraft/class_630;)V
 		ARG 1 root
 	METHOD method_2797 setPaddleAngle (Lnet/minecraft/class_1690;ILnet/minecraft/class_630;F)V

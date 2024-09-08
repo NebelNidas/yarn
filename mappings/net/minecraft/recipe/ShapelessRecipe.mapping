@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_1867 net/minecraft/recipe/ShapelessRecipe
-	FIELD field_40257 category Lnet/minecraft/class_7710;
 	FIELD field_9047 ingredients Lnet/minecraft/class_2371;
 	FIELD field_9049 group Ljava/lang/String;
 	FIELD field_9050 result Lnet/minecraft/class_1799;
+	FIELD field_40257 category Lnet/minecraft/class_7710;
 	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_7710;Lnet/minecraft/class_1799;Lnet/minecraft/class_2371;)V
 		ARG 1 group
 		ARG 2 category
@@ -11,6 +11,11 @@ CLASS net/minecraft/class_1867 net/minecraft/recipe/ShapelessRecipe
 	CLASS class_1868 Serializer
 		FIELD field_46104 CODEC Lcom/mojang/serialization/MapCodec;
 		FIELD field_48360 PACKET_CODEC Lnet/minecraft/class_9139;
+		METHOD method_8141 read (Lnet/minecraft/class_9129;)Lnet/minecraft/class_1867;
+			ARG 0 buf
+		METHOD method_8143 write (Lnet/minecraft/class_9129;Lnet/minecraft/class_1867;)V
+			ARG 0 buf
+			ARG 1 recipe
 		METHOD method_53757 (Lnet/minecraft/class_1856;)Z
 			ARG 0 ingredient
 		METHOD method_53758 (Lnet/minecraft/class_1867;)Lnet/minecraft/class_2371;
@@ -27,8 +32,3 @@ CLASS net/minecraft/class_1867 net/minecraft/recipe/ShapelessRecipe
 			ARG 0 recipe
 		METHOD method_56105 (Lnet/minecraft/class_9129;Lnet/minecraft/class_1856;)Lnet/minecraft/class_1856;
 			ARG 1 empty
-		METHOD method_8141 read (Lnet/minecraft/class_9129;)Lnet/minecraft/class_1867;
-			ARG 0 buf
-		METHOD method_8143 write (Lnet/minecraft/class_9129;Lnet/minecraft/class_1867;)V
-			ARG 0 buf
-			ARG 1 recipe

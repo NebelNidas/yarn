@@ -62,6 +62,8 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 		ARG 2 world
 		ARG 3 profile
 		ARG 4 clientOptions
+	METHOD method_7336 changeGameMode (Lnet/minecraft/class_1934;)Z
+		ARG 1 gameMode
 	METHOD method_14203 copyFrom (Lnet/minecraft/class_3222;Z)V
 		ARG 1 oldPlayer
 		ARG 2 alive
@@ -290,8 +292,6 @@ CLASS net/minecraft/class_3222 net/minecraft/server/network/ServerPlayerEntity
 	METHOD method_60593 (Lnet/minecraft/class_2338;Lnet/minecraft/class_243;)Lnet/minecraft/class_3222$class_9773;
 		ARG 1 respawnPos
 	METHOD method_60594 detachForDimensionChange ()V
-	METHOD method_7336 changeGameMode (Lnet/minecraft/class_1934;)Z
-		ARG 1 gameMode
 	CLASS 1
 		METHOD method_34227 sendPropertyUpdate (Lnet/minecraft/class_1703;II)V
 			ARG 1 handler

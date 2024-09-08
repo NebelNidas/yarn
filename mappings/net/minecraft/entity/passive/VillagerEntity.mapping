@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
+	FIELD field_7445 VILLAGER_DATA Lnet/minecraft/class_2940;
 	FIELD field_18526 ITEM_FOOD_VALUES Ljava/util/Map;
 	FIELD field_18527 GATHERABLE_ITEMS Ljava/util/Set;
 	FIELD field_18528 levelUpTimer I
@@ -17,11 +18,12 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 	FIELD field_20332 lastRestockCheckTime J
 	FIELD field_25167 natural Z
 	FIELD field_36335 LOGGER Lorg/slf4j/Logger;
-	FIELD field_7445 VILLAGER_DATA Lnet/minecraft/class_2940;
 	METHOD <init> (Lnet/minecraft/class_1299;Lnet/minecraft/class_1937;Lnet/minecraft/class_3854;)V
 		ARG 1 entityType
 		ARG 2 world
 		ARG 3 type
+	METHOD method_7234 wantsToStartBreeding ()Z
+	METHOD method_7239 canBreed ()Z
 	METHOD method_16917 setOffers (Lnet/minecraft/class_1916;)V
 		ARG 1 offers
 	METHOD method_16918 levelUp ()V
@@ -106,5 +108,3 @@ CLASS net/minecraft/class_1646 net/minecraft/entity/passive/VillagerEntity
 		ARG 0 stack
 	METHOD method_56683 (Lnet/minecraft/class_3850;)V
 		ARG 1 villagerData
-	METHOD method_7234 wantsToStartBreeding ()Z
-	METHOD method_7239 canBreed ()Z

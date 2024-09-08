@@ -1,9 +1,4 @@
 CLASS net/minecraft/class_1927 net/minecraft/world/explosion/Explosion
-	FIELD field_25400 behavior Lnet/minecraft/class_5362;
-	FIELD field_25818 DEFAULT_BEHAVIOR Lnet/minecraft/class_5362;
-	FIELD field_47328 particle Lnet/minecraft/class_2394;
-	FIELD field_47329 emitterParticle Lnet/minecraft/class_2394;
-	FIELD field_47330 soundEvent Lnet/minecraft/class_6880;
 	FIELD field_9184 destructionType Lnet/minecraft/class_1927$class_4179;
 	FIELD field_9185 entity Lnet/minecraft/class_1297;
 	FIELD field_9186 createFire Z
@@ -16,6 +11,11 @@ CLASS net/minecraft/class_1927 net/minecraft/world/explosion/Explosion
 	FIELD field_9193 damageSource Lnet/minecraft/class_1282;
 	FIELD field_9194 affectedPlayers Ljava/util/Map;
 	FIELD field_9195 x D
+	FIELD field_25400 behavior Lnet/minecraft/class_5362;
+	FIELD field_25818 DEFAULT_BEHAVIOR Lnet/minecraft/class_5362;
+	FIELD field_47328 particle Lnet/minecraft/class_2394;
+	FIELD field_47329 emitterParticle Lnet/minecraft/class_2394;
+	FIELD field_47330 soundEvent Lnet/minecraft/class_6880;
 	METHOD <init> (Lnet/minecraft/class_1937;Lnet/minecraft/class_1297;DDDFLjava/util/List;Lnet/minecraft/class_1927$class_4179;Lnet/minecraft/class_2394;Lnet/minecraft/class_2394;Lnet/minecraft/class_6880;)V
 		ARG 1 world
 		ARG 2 entity
@@ -61,6 +61,14 @@ CLASS net/minecraft/class_1927 net/minecraft/world/explosion/Explosion
 		ARG 14 particle
 		ARG 15 emitterParticle
 		ARG 16 soundEvent
+	METHOD method_8346 getAffectedBlocks ()Ljava/util/List;
+	METHOD method_8347 getCausingEntity ()Lnet/minecraft/class_1309;
+	METHOD method_8348 collectBlocksAndDamageEntities ()V
+	METHOD method_8350 affectWorld (Z)V
+		ARG 1 particles
+			COMMENT whether this explosion should emit explosion or explosion emitter particles around the source of the explosion
+	METHOD method_8351 getAffectedPlayers ()Ljava/util/Map;
+	METHOD method_8352 clearAffectedBlocks ()V
 	METHOD method_17752 getExposure (Lnet/minecraft/class_243;Lnet/minecraft/class_1297;)F
 		ARG 0 source
 		ARG 1 entity
@@ -87,12 +95,4 @@ CLASS net/minecraft/class_1927 net/minecraft/world/explosion/Explosion
 	METHOD method_55113 getEmitterParticle ()Lnet/minecraft/class_2394;
 	METHOD method_55114 getSoundEvent ()Lnet/minecraft/class_6880;
 	METHOD method_60274 canTriggerBlocks ()Z
-	METHOD method_8346 getAffectedBlocks ()Ljava/util/List;
-	METHOD method_8347 getCausingEntity ()Lnet/minecraft/class_1309;
-	METHOD method_8348 collectBlocksAndDamageEntities ()V
-	METHOD method_8350 affectWorld (Z)V
-		ARG 1 particles
-			COMMENT whether this explosion should emit explosion or explosion emitter particles around the source of the explosion
-	METHOD method_8351 getAffectedPlayers ()Ljava/util/Map;
-	METHOD method_8352 clearAffectedBlocks ()V
 	CLASS class_4179 DestructionType

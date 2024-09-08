@@ -6,6 +6,9 @@ CLASS net/minecraft/class_3767 net/minecraft/village/raid/RaidManager
 	FIELD field_30690 RAIDS Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/class_3218;)V
 		ARG 1 world
+	METHOD method_77 fromNbt (Lnet/minecraft/class_3218;Lnet/minecraft/class_2487;)Lnet/minecraft/class_3767;
+		ARG 0 world
+		ARG 1 nbt
 	METHOD method_16532 getOrCreateRaid (Lnet/minecraft/class_3218;Lnet/minecraft/class_2338;)Lnet/minecraft/class_3765;
 		ARG 1 world
 		ARG 2 pos
@@ -31,6 +34,3 @@ CLASS net/minecraft/class_3767 net/minecraft/village/raid/RaidManager
 	METHOD method_52561 (Lnet/minecraft/class_3218;Lnet/minecraft/class_2487;Lnet/minecraft/class_7225$class_7874;)Lnet/minecraft/class_3767;
 		ARG 1 nbt
 		ARG 2 registryLookup
-	METHOD method_77 fromNbt (Lnet/minecraft/class_3218;Lnet/minecraft/class_2487;)Lnet/minecraft/class_3767;
-		ARG 0 world
-		ARG 1 nbt

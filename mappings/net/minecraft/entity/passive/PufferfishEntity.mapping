@@ -1,14 +1,12 @@
 CLASS net/minecraft/class_1454 net/minecraft/entity/passive/PufferfishEntity
-	FIELD field_30353 NOT_PUFFED I
-	FIELD field_30354 SEMI_PUFFED I
-	FIELD field_30355 FULLY_PUFFED I
-	FIELD field_33692 BLOW_UP_TARGET_PREDICATE Lnet/minecraft/class_4051;
 	FIELD field_6832 deflateTicks I
 	FIELD field_6833 inflateTicks I
 	FIELD field_6834 BLOW_UP_FILTER Ljava/util/function/Predicate;
 	FIELD field_6835 PUFF_STATE Lnet/minecraft/class_2940;
-	METHOD method_36550 (Lnet/minecraft/class_1308;)Z
-		ARG 1 entity
+	FIELD field_30353 NOT_PUFFED I
+	FIELD field_30354 SEMI_PUFFED I
+	FIELD field_30355 FULLY_PUFFED I
+	FIELD field_33692 BLOW_UP_TARGET_PREDICATE Lnet/minecraft/class_4051;
 	METHOD method_6591 (Lnet/minecraft/class_1309;)Z
 		ARG 0 entity
 	METHOD method_6592 getScaleForPuffState (I)F
@@ -18,6 +16,8 @@ CLASS net/minecraft/class_1454 net/minecraft/entity/passive/PufferfishEntity
 	METHOD method_6594 getPuffState ()I
 	METHOD method_6596 setPuffState (I)V
 		ARG 1 puffState
+	METHOD method_36550 (Lnet/minecraft/class_1308;)Z
+		ARG 1 entity
 	CLASS class_1455 InflateGoal
 		FIELD field_6836 pufferfish Lnet/minecraft/class_1454;
 		METHOD <init> (Lnet/minecraft/class_1454;)V

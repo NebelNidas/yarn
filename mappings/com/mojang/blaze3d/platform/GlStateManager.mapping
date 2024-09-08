@@ -371,9 +371,9 @@ CLASS com/mojang/blaze3d/platform/GlStateManager
 		FIELD field_5123 capFill Lcom/mojang/blaze3d/platform/GlStateManager$class_1018;
 		FIELD field_5124 factor F
 	CLASS class_1034 StencilSubState
-		FIELD field_16203 ref I
 		FIELD field_5147 mask I
 		FIELD field_5148 func I
+		FIELD field_16203 ref I
 	CLASS class_1035 StencilState
 		FIELD field_5149 subState Lcom/mojang/blaze3d/platform/GlStateManager$class_1034;
 		FIELD field_5150 dppass I

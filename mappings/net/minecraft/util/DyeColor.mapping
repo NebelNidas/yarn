@@ -1,8 +1,5 @@
 CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 	COMMENT An enum representing 16 dye colors.
-	FIELD field_16537 signColor I
-	FIELD field_41600 CODEC Lnet/minecraft/class_3542$class_7292;
-	FIELD field_49259 PACKET_CODEC Lnet/minecraft/class_9139;
 	FIELD field_7943 entityColor I
 	FIELD field_7948 name Ljava/lang/String;
 	FIELD field_7950 BY_FIREWORK_COLOR Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;
@@ -10,6 +7,9 @@ CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 	FIELD field_7959 BY_ID Ljava/util/function/IntFunction;
 	FIELD field_7960 fireworkColor I
 	FIELD field_7965 id I
+	FIELD field_16537 signColor I
+	FIELD field_41600 CODEC Lnet/minecraft/class_3542$class_7292;
+	FIELD field_49259 PACKET_CODEC Lnet/minecraft/class_9139;
 	METHOD <init> (Ljava/lang/String;IILjava/lang/String;ILnet/minecraft/class_3620;II)V
 		ARG 3 id
 		ARG 4 name
@@ -17,10 +17,6 @@ CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 		ARG 6 mapColor
 		ARG 7 fireworkColor
 		ARG 8 signColor
-	METHOD method_16357 getSignColor ()I
-		COMMENT {@return the color used for dyed signs as RGB integer}
-		COMMENT
-		COMMENT <p>The returned value is between {@code 0} and {@code 0xFFFFFF}.
 	METHOD method_7786 byFireworkColor (I)Lnet/minecraft/class_1767;
 		COMMENT {@return the dye color whose firework color is {@code color}, or {@code null}
 		COMMENT if there is no such color}
@@ -56,3 +52,7 @@ CLASS net/minecraft/class_1767 net/minecraft/util/DyeColor
 		ARG 0 color
 	METHOD method_7797 (Lnet/minecraft/class_1767;)Lnet/minecraft/class_1767;
 		ARG 0 color
+	METHOD method_16357 getSignColor ()I
+		COMMENT {@return the color used for dyed signs as RGB integer}
+		COMMENT
+		COMMENT <p>The returned value is between {@code 0} and {@code 0xFFFFFF}.

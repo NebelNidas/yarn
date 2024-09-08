@@ -1,18 +1,23 @@
 CLASS net/minecraft/class_1303 net/minecraft/entity/ExperienceOrbEntity
-	FIELD field_27009 pickingCount I
-	FIELD field_30055 DESPAWN_AGE I
-	FIELD field_30056 EXPENSIVE_UPDATE_INTERVAL I
-	FIELD field_30058 MERGING_CHANCE_FRACTION I
 	FIELD field_6159 amount I
 	FIELD field_6161 health I
 	FIELD field_6162 target Lnet/minecraft/class_1657;
 	FIELD field_6164 orbAge I
+	FIELD field_27009 pickingCount I
+	FIELD field_30055 DESPAWN_AGE I
+	FIELD field_30056 EXPENSIVE_UPDATE_INTERVAL I
+	FIELD field_30058 MERGING_CHANCE_FRACTION I
 	METHOD <init> (Lnet/minecraft/class_1937;DDDI)V
 		ARG 1 world
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
 		ARG 8 amount
+	METHOD method_5918 roundToOrbSize (I)I
+		ARG 0 value
+	METHOD method_5919 getExperienceAmount ()I
+	METHOD method_5920 getOrbSize ()I
+	METHOD method_5921 applyWaterMovement ()V
 	METHOD method_31492 (IILnet/minecraft/class_1303;)Z
 		ARG 2 orb
 	METHOD method_31493 spawn (Lnet/minecraft/class_3218;Lnet/minecraft/class_243;I)V
@@ -44,8 +49,3 @@ CLASS net/minecraft/class_1303 net/minecraft/entity/ExperienceOrbEntity
 		COMMENT @return the amount of leftover experience
 		ARG 1 player
 		ARG 2 amount
-	METHOD method_5918 roundToOrbSize (I)I
-		ARG 0 value
-	METHOD method_5919 getExperienceAmount ()I
-	METHOD method_5920 getOrbSize ()I
-	METHOD method_5921 applyWaterMovement ()V

@@ -1,18 +1,10 @@
 CLASS net/minecraft/class_1472 net/minecraft/entity/passive/SheepEntity
-	FIELD field_30371 MAX_GRASS_TIMER I
 	FIELD field_6865 eatGrassTimer I
 	FIELD field_6867 COLORS Ljava/util/Map;
 	FIELD field_6868 DROPS Ljava/util/Map;
 	FIELD field_6869 eatGrassGoal Lnet/minecraft/class_1345;
 	FIELD field_6870 COLOR Lnet/minecraft/class_2940;
-	METHOD method_17689 (Lnet/minecraft/class_9694;Lnet/minecraft/class_8786;)Lnet/minecraft/class_1799;
-		ARG 2 recipe
-	METHOD method_26893 createSheepAttributes ()Lnet/minecraft/class_5132$class_5133;
-	METHOD method_58375 (Lnet/minecraft/class_1799;)Z
-		ARG 0 stack
-	METHOD method_59936 createChildColorRecipeInput (Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_9694;
-		ARG 0 firstColor
-		ARG 1 secondColor
+	FIELD field_30371 MAX_GRASS_TIMER I
 	METHOD method_6628 getNeckAngle (F)F
 		ARG 1 delta
 	METHOD method_6629 isSheared ()Z
@@ -36,3 +28,11 @@ CLASS net/minecraft/class_1472 net/minecraft/entity/passive/SheepEntity
 		ARG 2 secondParent
 	METHOD method_6641 getHeadAngle (F)F
 		ARG 1 delta
+	METHOD method_17689 (Lnet/minecraft/class_9694;Lnet/minecraft/class_8786;)Lnet/minecraft/class_1799;
+		ARG 2 recipe
+	METHOD method_26893 createSheepAttributes ()Lnet/minecraft/class_5132$class_5133;
+	METHOD method_58375 (Lnet/minecraft/class_1799;)Z
+		ARG 0 stack
+	METHOD method_59936 createChildColorRecipeInput (Lnet/minecraft/class_1767;Lnet/minecraft/class_1767;)Lnet/minecraft/class_9694;
+		ARG 0 firstColor
+		ARG 1 secondColor

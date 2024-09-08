@@ -2,10 +2,6 @@ CLASS net/minecraft/class_1662 net/minecraft/recipe/RecipeMatcher
 	COMMENT Matching class that matches a recipe to its required resources.
 	COMMENT This specifically does not check patterns (See {@link ShapedRecipe} for that).
 	FIELD field_7550 inputs Lit/unimi/dsi/fastutil/ints/Int2IntMap;
-	METHOD method_20478 addInput (Lnet/minecraft/class_1799;I)V
-		COMMENT Adds an item stack to the pool of available resources.
-		ARG 1 stack
-		ARG 2 maxCount
 	METHOD method_7400 addInput (Lnet/minecraft/class_1799;)V
 		COMMENT Adds a full item stack to the pool of available resources.
 		COMMENT
@@ -65,6 +61,10 @@ CLASS net/minecraft/class_1662 net/minecraft/recipe/RecipeMatcher
 			COMMENT the raw id of the item being consumed
 		ARG 2 count
 			COMMENT the number of times that item must be consumed
+	METHOD method_20478 addInput (Lnet/minecraft/class_1799;I)V
+		COMMENT Adds an item stack to the pool of available resources.
+		ARG 1 stack
+		ARG 2 maxCount
 	CLASS class_1663 Matcher
 		FIELD field_7551 requiredItems [I
 		FIELD field_7552 ingredients Ljava/util/List;

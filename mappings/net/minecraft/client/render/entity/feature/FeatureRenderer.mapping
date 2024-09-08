@@ -2,6 +2,17 @@ CLASS net/minecraft/class_3887 net/minecraft/client/render/entity/feature/Featur
 	FIELD field_17155 context Lnet/minecraft/class_3883;
 	METHOD <init> (Lnet/minecraft/class_3883;)V
 		ARG 1 context
+	METHOD method_4199 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;ILnet/minecraft/class_1297;FFFFFF)V
+		ARG 1 matrices
+		ARG 2 vertexConsumers
+		ARG 3 light
+		ARG 4 entity
+		ARG 5 limbAngle
+		ARG 6 limbDistance
+		ARG 7 tickDelta
+		ARG 8 animationProgress
+		ARG 9 headYaw
+		ARG 10 headPitch
 	METHOD method_17165 getContextModel ()Lnet/minecraft/class_583;
 	METHOD method_23194 getTexture (Lnet/minecraft/class_1297;)Lnet/minecraft/class_2960;
 		ARG 1 entity
@@ -26,14 +37,3 @@ CLASS net/minecraft/class_3887 net/minecraft/client/render/entity/feature/Featur
 		ARG 3 vertexConsumers
 		ARG 4 light
 		ARG 5 entity
-	METHOD method_4199 render (Lnet/minecraft/class_4587;Lnet/minecraft/class_4597;ILnet/minecraft/class_1297;FFFFFF)V
-		ARG 1 matrices
-		ARG 2 vertexConsumers
-		ARG 3 light
-		ARG 4 entity
-		ARG 5 limbAngle
-		ARG 6 limbDistance
-		ARG 7 tickDelta
-		ARG 8 animationProgress
-		ARG 9 headYaw
-		ARG 10 headPitch

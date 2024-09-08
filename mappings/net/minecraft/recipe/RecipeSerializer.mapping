@@ -10,10 +10,6 @@ CLASS net/minecraft/class_1865 net/minecraft/recipe/RecipeSerializer
 	COMMENT client, the client will disconnect upon receiving the recipe; if a
 	COMMENT recipe JSON intended for an absent recipe serializer is read, it is
 	COMMENT skipped.
-	FIELD field_17084 BLASTING Lnet/minecraft/class_1865;
-	FIELD field_17085 SMOKING Lnet/minecraft/class_1865;
-	FIELD field_17347 CAMPFIRE_COOKING Lnet/minecraft/class_1865;
-	FIELD field_19421 REPAIR_ITEM Lnet/minecraft/class_1865;
 	FIELD field_9028 ARMOR_DYE Lnet/minecraft/class_1865;
 	FIELD field_9029 BOOK_CLONING Lnet/minecraft/class_1865;
 	FIELD field_9030 SUSPICIOUS_STEW Lnet/minecraft/class_1865;
@@ -29,6 +25,10 @@ CLASS net/minecraft/class_1865 net/minecraft/recipe/RecipeSerializer
 	FIELD field_9042 SMELTING Lnet/minecraft/class_1865;
 	FIELD field_9043 FIREWORK_ROCKET Lnet/minecraft/class_1865;
 	FIELD field_9044 MAP_CLONING Lnet/minecraft/class_1865;
+	FIELD field_17084 BLASTING Lnet/minecraft/class_1865;
+	FIELD field_17085 SMOKING Lnet/minecraft/class_1865;
+	FIELD field_17347 CAMPFIRE_COOKING Lnet/minecraft/class_1865;
+	FIELD field_19421 REPAIR_ITEM Lnet/minecraft/class_1865;
 	METHOD method_17724 register (Ljava/lang/String;Lnet/minecraft/class_1865;)Lnet/minecraft/class_1865;
 		ARG 0 id
 		ARG 1 serializer

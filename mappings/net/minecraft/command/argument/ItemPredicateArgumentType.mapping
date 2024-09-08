@@ -15,6 +15,11 @@ CLASS net/minecraft/class_2293 net/minecraft/command/argument/ItemPredicateArgum
 	METHOD listSuggestions (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 1 context
 		ARG 2 builder
+	METHOD method_9801 itemPredicate (Lnet/minecraft/class_7157;)Lnet/minecraft/class_2293;
+		ARG 0 commandRegistryAccess
+	METHOD method_9804 getItemStackPredicate (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_2293$class_2295;
+		ARG 0 context
+		ARG 1 name
 	METHOD method_58522 (Lnet/minecraft/class_1799;)Z
 		ARG 0 stack
 	METHOD method_58523 (Lnet/minecraft/class_2096$class_2100;)Ljava/util/function/Predicate;
@@ -37,11 +42,6 @@ CLASS net/minecraft/class_2293 net/minecraft/command/argument/ItemPredicateArgum
 		ARG 0 tag
 	METHOD method_58534 (Ljava/lang/Object;)Lcom/mojang/brigadier/Message;
 		ARG 0 id
-	METHOD method_9801 itemPredicate (Lnet/minecraft/class_7157;)Lnet/minecraft/class_2293;
-		ARG 0 commandRegistryAccess
-	METHOD method_9804 getItemStackPredicate (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Lnet/minecraft/class_2293$class_2295;
-		ARG 0 context
-		ARG 1 name
 	METHOD parse (Lcom/mojang/brigadier/StringReader;)Ljava/lang/Object;
 		ARG 1 reader
 	CLASS class_2295 ItemStackPredicateArgument

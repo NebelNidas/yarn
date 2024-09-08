@@ -18,10 +18,10 @@ CLASS net/minecraft/class_5483 net/minecraft/world/biome/SpawnSettings
 	METHOD method_31004 getSpawnEntries (Lnet/minecraft/class_1311;)Lnet/minecraft/class_6012;
 		ARG 1 spawnGroup
 	CLASS class_1964 SpawnEntry
-		FIELD field_24681 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_9387 maxGroupSize I
 		FIELD field_9388 minGroupSize I
 		FIELD field_9389 type Lnet/minecraft/class_1299;
+		FIELD field_24681 CODEC Lcom/mojang/serialization/Codec;
 		METHOD <init> (Lnet/minecraft/class_1299;III)V
 			ARG 1 type
 			ARG 2 weight

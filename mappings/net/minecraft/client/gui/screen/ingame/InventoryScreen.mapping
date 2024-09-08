@@ -6,8 +6,6 @@ CLASS net/minecraft/class_490 net/minecraft/client/gui/screen/ingame/InventorySc
 	FIELD field_2935 mouseX F
 	METHOD <init> (Lnet/minecraft/class_1657;)V
 		ARG 1 player
-	METHOD method_19891 (Lnet/minecraft/class_4185;)V
-		ARG 1 button
 	METHOD method_2486 drawEntity (Lnet/minecraft/class_332;IIIIIFFFLnet/minecraft/class_1309;)V
 		ARG 0 context
 		ARG 1 x1
@@ -18,6 +16,8 @@ CLASS net/minecraft/class_490 net/minecraft/client/gui/screen/ingame/InventorySc
 		ARG 7 mouseX
 		ARG 8 mouseY
 		ARG 9 entity
+	METHOD method_19891 (Lnet/minecraft/class_4185;)V
+		ARG 1 button
 	METHOD method_48472 drawEntity (Lnet/minecraft/class_332;FFFLorg/joml/Vector3f;Lorg/joml/Quaternionf;Lorg/joml/Quaternionf;Lnet/minecraft/class_1309;)V
 		ARG 0 context
 		ARG 1 x

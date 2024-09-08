@@ -3,12 +3,6 @@ CLASS net/minecraft/class_1269 net/minecraft/util/ActionResult
 	COMMENT such as {@link net.minecraft.block.AbstractBlock#onUse}, return this.
 	COMMENT
 	COMMENT @see TypedActionResult
-	FIELD field_21466 Lnet/minecraft/class_1269;
-		COMMENT Indicates an action is performed but no animation should accompany the
-		COMMENT performance.
-	FIELD field_33562 Lnet/minecraft/class_1269;
-		COMMENT Indicates an action is performed but no animation should accompany the
-		COMMENT performance and no statistic should be incremented.
 	FIELD field_5811 Lnet/minecraft/class_1269;
 		COMMENT Indicates an action is not performed but allows other actions to
 		COMMENT perform.
@@ -18,6 +12,12 @@ CLASS net/minecraft/class_1269 net/minecraft/util/ActionResult
 	FIELD field_5814 Lnet/minecraft/class_1269;
 		COMMENT Indicates that an action is not performed and prevents other actions
 		COMMENT from performing.
+	FIELD field_21466 Lnet/minecraft/class_1269;
+		COMMENT Indicates an action is performed but no animation should accompany the
+		COMMENT performance.
+	FIELD field_33562 Lnet/minecraft/class_1269;
+		COMMENT Indicates an action is performed but no animation should accompany the
+		COMMENT performance and no statistic should be incremented.
 	METHOD method_23665 isAccepted ()Z
 		COMMENT {@return whether an action is performed}
 	METHOD method_23666 shouldSwingHand ()Z

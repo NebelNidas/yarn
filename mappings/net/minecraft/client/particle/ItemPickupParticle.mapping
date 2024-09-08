@@ -1,9 +1,9 @@
 CLASS net/minecraft/class_693 net/minecraft/client/particle/ItemPickupParticle
-	FIELD field_20944 bufferStorage Lnet/minecraft/class_4599;
 	FIELD field_3821 interactingEntity Lnet/minecraft/class_1297;
 	FIELD field_3823 itemEntity Lnet/minecraft/class_1297;
 	FIELD field_3824 dispatcher Lnet/minecraft/class_898;
 	FIELD field_3826 ticksExisted I
+	FIELD field_20944 bufferStorage Lnet/minecraft/class_4599;
 	FIELD field_47684 targetX D
 	FIELD field_47685 targetY D
 	FIELD field_47686 targetZ D
