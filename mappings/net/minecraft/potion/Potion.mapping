@@ -4,11 +4,11 @@ CLASS net/minecraft/class_1842 net/minecraft/potion/Potion
 	FIELD field_50152 requiredFeatures Lnet/minecraft/class_7699;
 	FIELD field_51947 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_51948 PACKET_CODEC Lnet/minecraft/class_9139;
+	METHOD <init> ([Lnet/minecraft/class_1293;)V
+		ARG 1 effects
 	METHOD <init> (Ljava/lang/String;[Lnet/minecraft/class_1293;)V
 		ARG 1 baseName
 		ARG 2 effects
-	METHOD <init> ([Lnet/minecraft/class_1293;)V
-		ARG 1 effects
 	METHOD method_8049 getEffects ()Ljava/util/List;
 	METHOD method_8050 hasInstantEffect ()Z
 	METHOD method_8051 finishTranslationKey (Ljava/util/Optional;Ljava/lang/String;)Ljava/lang/String;

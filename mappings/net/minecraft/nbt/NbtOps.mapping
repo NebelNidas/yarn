@@ -123,10 +123,10 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 			ARG 2 mergedValue
 	CLASS class_7808 ByteArrayMerger
 		FIELD field_40668 list Lit/unimi/dsi/fastutil/bytes/ByteArrayList;
-		METHOD <init> (B)V
-			ARG 1 value
 		METHOD <init> ([B)V
 			ARG 1 values
+		METHOD <init> (B)V
+			ARG 1 value
 	CLASS class_7809 CompoundListMerger
 		FIELD field_40669 list Lnet/minecraft/class_2499;
 		METHOD <init> (Lit/unimi/dsi/fastutil/bytes/ByteArrayList;)V
@@ -159,10 +159,10 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 		FIELD field_40671 EMPTY Lnet/minecraft/class_2509$class_7811;
 	CLASS class_7812 IntArrayMerger
 		FIELD field_40672 list Lit/unimi/dsi/fastutil/ints/IntArrayList;
-		METHOD <init> (I)V
-			ARG 1 value
 		METHOD <init> ([I)V
 			ARG 1 values
+		METHOD <init> (I)V
+			ARG 1 value
 	CLASS class_7813 Merger
 		METHOD method_46239 getResult ()Lnet/minecraft/class_2520;
 		METHOD method_46240 merge (Lnet/minecraft/class_2520;)Lnet/minecraft/class_2509$class_7813;
@@ -173,7 +173,7 @@ CLASS net/minecraft/class_2509 net/minecraft/nbt/NbtOps
 			ARG 1 nbts
 	CLASS class_7814 LongArrayMerger
 		FIELD field_40673 list Lit/unimi/dsi/fastutil/longs/LongArrayList;
-		METHOD <init> (J)V
-			ARG 1 value
 		METHOD <init> ([J)V
 			ARG 1 values
+		METHOD <init> (J)V
+			ARG 1 value
